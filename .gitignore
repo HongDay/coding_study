@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# IntelliJ / JetBrains
+.out/
+.idea/
+*.iml
+*.xml
+
+# Java (컴파일 결과물)
+/out/
+/build/
+/target/
+*.class

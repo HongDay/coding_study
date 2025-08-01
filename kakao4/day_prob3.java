@@ -1,7 +1,9 @@
+package kakao4;
+
 import java.io.*;
 import java.util.*;
 
-class Main {
+public class day_prob3 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
