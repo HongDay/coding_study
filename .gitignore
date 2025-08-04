@@ -199,4 +199,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,intellij,java
+
+# IntelliJ / JetBrains
+.out/
+.idea/
+*.iml
+*.xml
+
+# Java (컴파일 결과물)
+/out/
+/build/
+/target/
