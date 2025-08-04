@@ -9,22 +9,15 @@ public class day_prob1 {
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		int n = Integer.parseInt(st.nextToken());
+		st.nextToken();
 		String S = st.nextToken();
 		String c = st.nextToken();
 
-		String s = "" + S.charAt(S.length()-1);
-
-		if (Objects.equals(s, c)){
-			String answer = "";
-			for (int i = 0; i < S.length()-1; i++){
-				answer = answer + S.charAt(i);
-			}
-			System.out.println(answer);
+		if (S.endsWith(c)){
+			System.out.println(S.substring(0, S.length() - 1));
 		}
 		else{
 			System.out.println(S+c);
 		}
-		
 	}
 }
