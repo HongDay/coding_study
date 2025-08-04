@@ -4,11 +4,14 @@ import java.io.*;
 import java.util.*;
 
 public class day_prob3 {
+
+	static int[] heights;
+
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int N = Integer.parseInt(br.readLine());
-		int[] heights = new int[N];
+		heights = new int[N];
 
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < N; i++){
@@ -16,43 +19,26 @@ public class day_prob3 {
 			heights[i] = height - i - 1;
 		}
 
-		int answer = star(0, heights);
+		int answer = star(0, 0);
 		System.out.println(answer);
 
 	}
 
-		
-	static int star(int idx, int[] heights){
+
+	static int star(int idx, int time){
 		
 		// base case
-		if (idx == heights.length - 1){
-			if (heights[idx] >= 0) {
-				return 1;
-			}
-			else {
-				return 0;
-			}
+		if (idx == heights.length){
+			return 0;
 		}
 
 		// If it is grabable
-		if (heights[idx] >= 0){
-			int aftergrab[] = new int[heights.length];
-			for (int i = 0; i < heights.length; i++){
-				aftergrab[i] = heights[i] - heights[idx];
-			}
-			int grab = 1 + star(idx + 1, aftergrab);
-			int move = star(idx + 1, heights);
-
-			// compare the grab case and move case
-			if (grab > move){
-				return grab;
-			}
-			else {
-				return move;
-			}
+		if (heights[idx] - time >= 0){
+			int grab = 1 + star(idx + 1, heights[idx]);
+			int move = star(idx + 1, time);
+			return Math.max(grab, move);
+		} else { // If not grabale, just move
+			return star(idx + 1, time);
 		}
-
-		// If not grabale, just move
-		return star(idx + 1, heights);
 	}
 }
