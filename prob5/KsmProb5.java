@@ -1,7 +1,6 @@
-package kakao4;
+package prob5;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class KsmProb5 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
