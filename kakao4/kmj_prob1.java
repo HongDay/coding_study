@@ -10,7 +10,6 @@ class kmj_prob1 {
         String S = st.nextToken();
         String c = st.nextToken();
 
-
         String result;
         if (c.equals(Character.toString(S.charAt(N - 1)))) System.out.print(S.substring(0, N - 1));
         else System.out.print(S + c);
