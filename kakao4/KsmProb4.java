@@ -3,7 +3,7 @@ package kakao4;
 import java.io.*;
 import java.util.*;
 
-public class ksm_prob4 {
+public class KsmProb4 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -69,7 +69,7 @@ public class ksm_prob4 {
     }
 
     public static void main(String[] args) throws Exception {
-        ksm_prob4 main = new ksm_prob4();
+        KsmProb4 main = new KsmProb4();
         main.collision();
     }
 }
