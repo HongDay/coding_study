@@ -31,12 +31,10 @@ public class day_prob2 {
 					answer += boxes[i];
 					N -= (i * boxes[i]);
 				}else{
-					for(int j = 0; j < i; j++){
+					for(int j = 0; j < boxes[i]; j++){
+						if (N < 0) {break;}
 						answer += 1;
 						N -= i;
-						if (i-j){
-
-						}
 					}
 				}
 				if (N <= 0){
