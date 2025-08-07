@@ -27,8 +27,18 @@ public class day_prob2 {
 		
 		for (int i = 1000; i > 0; i--) {
 			if (boxes[i] > 0){
-				answer += boxes[i];
-				N -= (i*boxes[i]);
+				if(i*boxes[i] > N) {
+					answer += boxes[i];
+					N -= (i * boxes[i]);
+				}else{
+					for(int j = 0; j < i; j++){
+						answer += 1;
+						N -= i;
+						if (i-j){
+
+						}
+					}
+				}
 				if (N <= 0){
 					break;
 				}
