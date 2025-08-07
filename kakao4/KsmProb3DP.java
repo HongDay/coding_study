@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class ksm_prob3_dp {
+public class KsmProb3DP {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -76,7 +76,7 @@ public class ksm_prob3_dp {
 
 
     public static void main(String[] args) throws Exception {
-        ksm_prob3_dp prob3 = new ksm_prob3_dp();
+        KsmProb3DP prob3 = new KsmProb3DP();
         prob3.star();
     }
 }

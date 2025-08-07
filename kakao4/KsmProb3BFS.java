@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class ksm_prob3_bfs {
+public class KsmProb3BFS {
     // 현재 위치, 시간, 개수 저장
     static class Person{
         int index;
