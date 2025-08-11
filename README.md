@@ -18,3 +18,7 @@
   - 문제 1~4 : 카카오테크 부트캠프 3기 코딩테스트 문제 4개
   - 문제 5 : [\[벡준\] 1003번 - 피보나치 함수](https://www.acmicpc.net/problem/1003)
     - 정리링크 (정리예정)
+  - 문제 6 : [\[벡준\] 9251번 - LCS](https://www.acmicpc.net/problem/9251)
+  - 문제 7 : [\[벡준\] 2839번 - 설탕 배달](https://www.acmicpc.net/problem/2839)
+  - 문제 8 : [\[벡준\] 1149번 - RGB 거리](https://www.acmicpc.net/problem/1149)
+
