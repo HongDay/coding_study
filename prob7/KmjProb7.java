@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class SugarDelivery {
+public class KmjProb7 {
     private static Integer[] dp;
     private static int INT_BIG = 1000000;
 
