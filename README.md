@@ -17,8 +17,11 @@
 ## 🗒️ 코드 리뷰 및 스터디 기록
   - 문제 1~4 : 카카오테크 부트캠프 3기 코딩테스트 문제 4개
   - 문제 5 : [\[벡준\] 1003번 - 피보나치 함수](https://www.acmicpc.net/problem/1003)
-    - 정리링크 (정리예정)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2477d817ab0a804f828ee869a97d5bb2?source=copy_link)
   - 문제 6 : [\[벡준\] 9251번 - LCS](https://www.acmicpc.net/problem/9251)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/LCS-2487d817ab0a801aae36fc7f46f8c923?source=copy_link)
   - 문제 7 : [\[벡준\] 2839번 - 설탕 배달](https://www.acmicpc.net/problem/2839)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2487d817ab0a8072aa8dc772334d7530?source=copy_link)
   - 문제 8 : [\[벡준\] 1149번 - RGB 거리](https://www.acmicpc.net/problem/1149)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/RGB-2487d817ab0a8086bad9f23d721adf9e?source=copy_link)
 
