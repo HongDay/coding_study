@@ -1,4 +1,4 @@
-package Prob9;
+package prob9;
 
 public class DayProb9 {
 }

@@ -15,12 +15,12 @@
  <br/>
 
 ## ✋ 참여자
-|                                      이름                                       |    직군    | Git, 기술블로그                                                                                                                       | 비고                                                                                                       |
-|:-----------------------------------------------------------------------------:|:--------:|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <img src="https://github.com/HongDay.png" width="50"/><br/>**홍대의<br/>(스터디장)** | `BE개발자`  | GitHub : [github.com/HongDay](https://github.com/HongDay)<br/>Velog : [velog.io/@hongday](https://velog.io/@hongday/posts) | - 코드리뷰를 통해 다양한 코딩방식과 논리구조를 이해하고 <br/>  코딩/개발 방식의 인사이트를 넓히고자 개설 <br/> - 개발 시 코드의 효율성과 알고리즘 사고능력 향상을 위해 참여 |
-|      <img src="https://github.com/kmj7769.png" width="50"/><br/>**김민준**       |          |                                                                                                                                  | -                                                                                                        |
-|       <img src="https://github.com/tn-als.png" width="50"/><br/>**구수민**       |          |                                                                                                                                  | -                                                                                                        |
-|     <img src="https://github.com/YinaePark.png" width="50"/><br/>**박이내**      |          |                                                                                                                                  | -                                                                                                        |
+|                                      이름                                       |  직군   | Git, 기술블로그                                                                                                     | 비고                                                                                             |
+|:-----------------------------------------------------------------------------:|:-----:|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/HongDay.png" width="50"/><br/>**홍대의<br/>(스터디장)** | `BE개발자` | - [github.com/HongDay](https://github.com/HongDay)<br/> - [velog.io/@hongday](https://velog.io/@hongday/posts) | - 여러사람의 코딩방식과 논리구조를 이해하며<br/> 코딩/개발 방식의 인사이트를 넓히고자 스터디 개설 <br/> - 개발 시 코드의 효율과 알고리즘 사고능력을 위해 참여 |
+|      <img src="https://github.com/kmj7769.png" width="50"/><br/>**김민준**       |       |                                                                                                                | -                                                                                              |
+|       <img src="https://github.com/tn-als.png" width="50"/><br/>**구수민**       |       |                                                                                                                | -                                                                                              |
+|     <img src="https://github.com/YinaePark.png" width="50"/><br/>**박이내**      |       |                                                                                                                | -                                                                                              |
 
 
  <br/>
@@ -38,13 +38,13 @@
 
 ## 🗒️ 코드 리뷰 및 스터디 기록
   - 문제 1~4 : 카카오테크 부트캠프 3기 코딩테스트 문제 4개
-  - 문제 5 : [\[벡준\] 1003번 - 피보나치 함수](https://www.acmicpc.net/problem/1003)
+  - 문제 5 : [\[백준\] 1003번 - 피보나치 함수](https://www.acmicpc.net/problem/1003)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2477d817ab0a804f828ee869a97d5bb2?source=copy_link)
-  - 문제 6 : [\[벡준\] 9251번 - LCS](https://www.acmicpc.net/problem/9251)
+  - 문제 6 : [\[백준\] 9251번 - LCS](https://www.acmicpc.net/problem/9251)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/LCS-2487d817ab0a801aae36fc7f46f8c923?source=copy_link)
-  - 문제 7 : [\[벡준\] 2839번 - 설탕 배달](https://www.acmicpc.net/problem/2839)
+  - 문제 7 : [\[백준\] 2839번 - 설탕 배달](https://www.acmicpc.net/problem/2839)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2487d817ab0a8072aa8dc772334d7530?source=copy_link)
-  - 문제 8 : [\[벡준\] 1149번 - RGB 거리](https://www.acmicpc.net/problem/1149)
+  - 문제 8 : [\[백준\] 1149번 - RGB 거리](https://www.acmicpc.net/problem/1149)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/RGB-2487d817ab0a8086bad9f23d721adf9e?source=copy_link)
 
  <br/>
