@@ -1,5 +1,8 @@
 package prob7;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class PynProb7 {
     /*
      * 설탕 배달
