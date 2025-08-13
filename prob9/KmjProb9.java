@@ -1,4 +1,4 @@
-package prob9
+package prob9;
 
 import java.io.BufferedReader;
 import java.io.IOException;
