@@ -1,4 +1,7 @@
-package prob8;
+package prob6;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class PynProb6 {
 
