@@ -10,7 +10,29 @@
 - 선정기준 : 1로테 당 1주제, 주제에 맞는 문제
 - 난이도 : 백준 실버 이상 선정자 자유
 - 사용언어 : Java
+- [스터디 관리 노션 페이지](https://midnight-catcher-3a7.notion.site/23f7d817ab0a8058b4bec8af53151a0b?source=copy_link)
 
+ <br/>
+
+## ✋ 참여자
+|                                      이름                                       |    직군    | Git, 기술블로그                                                                                                                       | 비고                                                                                                       |
+|:-----------------------------------------------------------------------------:|:--------:|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/HongDay.png" width="50"/><br/>**홍대의<br/>(스터디장)** | `BE개발자`  | GitHub : [github.com/HongDay](https://github.com/HongDay)<br/>Velog : [velog.io/@hongday](https://velog.io/@hongday/posts) | - 코드리뷰를 통해 다양한 코딩방식과 논리구조를 이해하고 <br/>  코딩/개발 방식의 인사이트를 넓히고자 개설 <br/> - 개발 시 코드의 효율성과 알고리즘 사고능력 향상을 위해 참여 |
+|      <img src="https://github.com/kmj7769.png" width="50"/><br/>**김민준**       |          |                                                                                                                                  | -                                                                                                        |
+|       <img src="https://github.com/tn-als.png" width="50"/><br/>**구수민**       |          |                                                                                                                                  | -                                                                                                        |
+|     <img src="https://github.com/YinaePark.png" width="50"/><br/>**박이내**      |          |                                                                                                                                  | -                                                                                                        |
+
+
+ <br/>
+
+## ‼️ 브랜치/디렉토리 관리 규칙
+  - "문제-참여자" 별로 브랜치 생성
+  - 이후 코드 리팩토링 시도시, 문제별로 버전관리하기 위함
+  - **브랜치명** : P{문제번호}/{이니셜}
+    - ex) `P4/ksm`, `P4/hde`
+  - 스터디세션 이전까지 pr, 스터디세션 시작시 스터디장이 merge후 리뷰
+  - **디렉토리명** : Prob{문제번호}/{이름}Prob{문제번호}.java
+    - ex) `Prob4/DayProb4.java`, `Prob5/KsmProb5.java`
 
  <br/>
 
@@ -25,3 +47,7 @@
   - 문제 8 : [\[벡준\] 1149번 - RGB 거리](https://www.acmicpc.net/problem/1149)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/RGB-2487d817ab0a8086bad9f23d721adf9e?source=copy_link)
 
+ <br/>
+
+## 👉 외부활동 참여 기록 (알고리즘 대회 등)
+  - 2025.08.31 **\[백준 월간 향유회 8월\]** 참여예정
