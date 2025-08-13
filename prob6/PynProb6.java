@@ -1,5 +1,8 @@
 package prob8;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class PynProb6 {
 
     static String str1, str2;
