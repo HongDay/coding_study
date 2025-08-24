@@ -156,7 +156,7 @@ public class PynProb17 {
             // 다음선수
             now = (now+1)%9;
         }
-
+g
         if(score>max) {
             max=score;
         }
