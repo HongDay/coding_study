@@ -39,13 +39,13 @@ public class DayProb17 {
         // 4번 타자는 이미 1번 선수로 확정됨.
         if (now == 3) {
             makeOrder(now + 1);
+            return;
         }
         if (now == 9) {
             // 계산 후 최대점수 업데이트
             int thisScore = calScore();
             if (thisScore > max){max = thisScore;}
-            for (int ord : order){
-            }
+            return;
         }
         for (int i = 1; i < 9; i++){
             if (used[i]) {continue;}
@@ -53,7 +53,6 @@ public class DayProb17 {
             used[i] = true;
             makeOrder(now + 1);
             used[i] = false;
-            order[now] = 0;
         }
     }
 
@@ -63,33 +62,22 @@ public class DayProb17 {
 
         // 이닝
         for (int j = 0; j < N; j++){
-            int[] ru = {0,0,0,0};
+            int ru = 0; // 비트마스크로 관리 예정
             int outcount = 0;
 
             while (outcount < 3){
                 int player = order[p % 9];
+                int ruta = scores[j][player];
 
-                if (scores[j][player] == 0) {
+                if (ruta == 0) {
                     outcount++;
-                } else if (scores[j][player] == 4){
-                    ru[0] = 1;
-                    for (int i = 0; i < 4; i++){
-                        score += ru[i];
-                        ru[i] = 0;
-                    }
+                } else if (ruta == 4){
+                    score += (Integer.bitCount(ru) + 1);
+                    ru = 0;
                 } else {
-                    ru[0] = 1;
-                    int ruta = scores[j][player];
-                    for (int i = 3; i >= 0; i--){
-                        if (ru[i] == 0){continue;}
-                        if (i + ruta >= 4){
-                            score++;
-                            ru[i] = 0;
-                        } else {
-                            ru[i] = 0;
-                            ru[i + ruta] = 1;
-                        }
-                    }
+                    ru = (ru | 1) << ruta;
+                    score += Integer.bitCount(ru >> 4);
+                    ru = 0b1110 & ru;
                 }
 
                 p++;
