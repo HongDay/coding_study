@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class LadderControl {
+public class KmjProb18 {
     static int N, M, H, answer = -1;
     static boolean[][] ladder;
 
