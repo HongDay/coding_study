@@ -1,8 +1,6 @@
-package prob18;
+package prob19;
 
 import java.io.*;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 // 참가번호 0부터 시작

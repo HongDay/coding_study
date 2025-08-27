@@ -64,6 +64,10 @@
     - **블로그** 정리 페이지 : [링크](https://velog.io/@hongday/백준-9663-N-Queen)
   - 문제 17 : [\[백준\] 17281번 - ⚾](https://www.acmicpc.net/problem/17281)
     - **블로그** 정리 페이지 : [링크](https://velog.io/@hongday/백준-17281)
+  - 문제 18 : [\[백준\] 15684번 - 사다리조작](https://www.acmicpc.net/problem/15684)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2597d817ab0a80729c99c44b7738c364?source=copy_link)
+  - 문제 19 : [\[백준\] 1079번 - 마피아](https://www.acmicpc.net/problem/1079)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/25a7d817ab0a803b82ffc699cc8855ed?source=copy_link)
 
  <br/>
 
