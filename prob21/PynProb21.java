@@ -1,0 +1,50 @@
+package prob21;
+
+import java.util.*;
+import java.io.*;
+
+public class PynProb21 {
+    /*
+     * N= 10^5 >>  O(NlogN) 가능
+     * */
+
+
+    public static void main(String args[]) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
+        int N = Integer.parseInt(br.readLine());
+        int[][] Is = new int[N][2];
+
+        for(int i=0; i<N; i++) {
+            st = new StringTokenizer(br.readLine());
+            int s = Integer.parseInt(st.nextToken());
+            int e = Integer.parseInt(st.nextToken());
+            Is[i][0] = s;
+            Is[i][1] = e;
+        }
+
+        // 끝나는시간먼저, 시작시간그다음 정렬
+        Arrays.sort(Is, (o1, o2)->{
+            if(o1[1] == o2[1]) {
+                return Integer.compare(o1[0], o2[0]);
+            }
+            return Integer.compare(o1[1], o2[1]);
+        });
+
+        int answer = 0;
+        int nowTime = 0;
+
+
+        for(int[] i : Is) {
+            int s = i[0];
+            int e = i[1];
+            if(s>=nowTime) {
+                answer++;
+                nowTime = e;
+            }
+        }
+
+
+        System.out.println(answer);
+    }
+}
