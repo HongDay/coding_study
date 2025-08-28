@@ -68,6 +68,10 @@
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/2597d817ab0a80729c99c44b7738c364?source=copy_link)
   - 문제 19 : [\[백준\] 1079번 - 마피아](https://www.acmicpc.net/problem/1079)
     - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/25a7d817ab0a803b82ffc699cc8855ed?source=copy_link)
+  - 문제 20 : [\[백준\] 1062번 - 가르침](https://www.acmicpc.net/problem/1062)
+    - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/25b7d817ab0a80fbbf25f1f312adffb4?source=copy_link)
+  - 문제 21 : [\[백준\] 1931번 - 회의실 배정](https://www.acmicpc.net/problem/1931)
+      - 노션 정리 페이지 : [링크](https://midnight-catcher-3a7.notion.site/25c7d817ab0a80fcb0dcee79e5c7d47c?source=copy_link)
 
  <br/>
 
