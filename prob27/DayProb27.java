@@ -5,53 +5,44 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class DayProb27 {
+
+    private static int[] dp;
+
     public static void main(String[] argv) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
-        String messi1 = "M";
-        String messi2 = "M G";
-        String messiNew = "";
+        dp = new int[60];
+        dp[1] = 5;
+        dp[2] = 13;
 
-        int mess1 = 5;
-        int mess2 = 13;
-        int mess = 0;
-
-        while (mess < N){
-            messiNew = messi2 + " " + messi1;
-            mess = mess1 + mess2 + 1;
-            messi1 = messi2;
-            mess1 = mess2;
-            messi2 = messiNew;
-            mess2 = mess;
+        int i;
+        for (i = 3; i < 60; i++){
+            dp[i] = dp[i-1] + dp[i-2] + 1;
+            if (dp[i] > N){break;}
         }
 
-        int cur = messiNew.length();
+        divideConquer(i, N);
+    }
 
-        while (mess > 0) {
-            char now = messiNew.charAt(cur-1);
-            if (now == 'M'){
-                if (mess - 5 < N){
-                    System.out.println("Messi".charAt(N + 5 - mess - 1));
-                    break;
-                }
-                mess -= 5;
-                cur --;
-            } else if (now == 'G') {
-                if (mess - 7 < N){
-                    System.out.println("Gimossi".charAt(N + 7 - mess - 1));
-                    break;
-                }
-                mess -= 7;
-                cur --;
-            } else {
-                if (mess == N){
-                    System.out.println("Messi Messi Gimossi");
-                    break;
-                }
-                mess --;
-                cur --;
-            }
+    private static void divideConquer(int idx, int target){
+        if (idx == 1) {
+            System.out.println("Messi".charAt(target - 1));
+            return;
+        } else if (idx == 2){
+            if (target == 6){
+                System.out.println("Messi Messi Gimossi");
+            } else{
+                System.out.println("Messi Gimossi".charAt(target - 1));
+            } return;
+        }
+
+        if (dp[idx - 1] + 1 == target){
+            System.out.println("Messi Messi Gimossi");
+        } else if (target <= dp[idx - 1]){
+            divideConquer(idx-1, target);
+        } else {
+            divideConquer(idx-2, target-dp[idx-1]-1);
         }
     }
 }
