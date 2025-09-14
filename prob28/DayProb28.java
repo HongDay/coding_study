@@ -45,9 +45,17 @@ public class DayProb28 {
         if (n == 1) {
             return matrix;
         } else {
-            return square(divideConquer(n/2), divideConquer(n-n/2));
+            // 어차피 제곱 연산을 해야되는거라 곱해야되는 제곱수가 똑같거나 1만 차이남.
+            // 한번 더 다시 계산할 필요가 없음. 재사용하자고
+            // return square(divideConquer(n/2), divideConquer(n-n/2));
+            int[][] half = divideConquer(n/2);
+            int[][] squared = square(half, half);
+            if (n%2==0) {
+                return squared;
+            } else {
+                return square(squared, matrix);
+            }
         }
-
     }
 
     private static int[][] square(int[][] a, int[][] b){
@@ -55,7 +63,7 @@ public class DayProb28 {
         for (int i = 0; i < N; i++){
             for (int j = 0; j < N; j++){
                 for (int k = 0; k < N; k++){
-                    midResult[i][j] += a[i][k] * b[k][j];
+                    midResult[i][j] += (a[i][k] * b[k][j] % 1000);
                 }
             }
         }
