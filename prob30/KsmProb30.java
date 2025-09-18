@@ -15,7 +15,9 @@ public class KsmProb30 {
         if (n <= 2) {
             if (n == 0) bw.write("m");
             else bw.write("o");
-        } else {
+        }
+        // n이 2보다 크다면 해당 인덱스가 있을만한 k의 길이를 찾음
+        else {
             int exKLength = 3;
             int k = 1;
             while (true) {
@@ -33,8 +35,9 @@ public class KsmProb30 {
     private String findChar(int kLength, int k) {
         int left = (kLength - (k + 3)) / 2;
 
-        // 왼쪽 편 또는 오른쪽 편에 있을 때
+        // 왼쪽 편에 있을 때
         if (n <= left) return findChar(left, k - 1);
+        // 오른쪽 편에 있을 때
         if (n >= (left + k + 4)) {
             n -= left + k + 3;
             return findChar(left, k - 1);
