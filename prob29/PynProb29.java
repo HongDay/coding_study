@@ -1,3 +1,4 @@
+/*
 package prob29;
 
 import java.util.*;
@@ -70,4 +71,4 @@ public class PynProb29 {
 
         }
 
-}
+}*/
