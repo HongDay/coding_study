@@ -1,4 +1,3 @@
-/*
 package prob29;
 
 import java.util.*;
@@ -7,8 +6,7 @@ import java.io.*;
 public class PynProb29 {
     static int N;
     static boolean[][] arr;
-    StringBuilder sb = new StringBuilder();
-
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String args[]) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -71,4 +69,4 @@ public class PynProb29 {
 
         }
 
-}*/
+}
