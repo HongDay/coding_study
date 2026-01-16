@@ -1,4 +1,4 @@
-package Prob34;
+package prob34;
 
 import java.io.*;
 import java.util.StringTokenizer;
