@@ -7,53 +7,63 @@ import java.util.StringTokenizer;
 
 public class DayProb34 {
     public static void main (String[] argv) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
+
+        st = new StringTokenizer(br.readLine());
         int d = Integer.parseInt(st.nextToken());
-        double twos = Math.pow(2, d);
-        String loc = st.nextToken();
+        String num = st.nextToken();
 
         st = new StringTokenizer(br.readLine());
         double movex = Double.parseDouble(st.nextToken());
         double movey = Double.parseDouble(st.nextToken());
 
-        double firstx = 0;
-        double firsty = 0;
-        double plus = twos;
-        for (int i = d-1; i >= 0; i--) {
-            plus /= 2;
-            char cur = loc.charAt(i);
-            if (cur == '2') {
-                firstx += plus;
-            } else if (cur == '3') {
-                firstx += plus;
-                firsty += plus;
-            } else if (cur == '4') {
-                firsty += plus;
-            }
-        }
+        double twos = Math.pow(2,d);
+        double beforex = 1;
+        double beforey = 1;
 
-        double afterx = firstx + movex;
-        double aftery = firsty + movey;
-        plus = twos;
-        StringBuilder answer = new StringBuilder();
         for (int i = 0; i < d; i++){
-            plus /= 2;
-            boolean xcheck = (afterx > plus);
-            boolean ycheck = (aftery > plus);
-
-            if (!xcheck & !ycheck) {
-                answer.append("1");
-            } else if (xcheck & !ycheck) {
-                answer.append("2");
-            } else if (xcheck & ycheck) {
-                answer.append("3");
-            } else {
-                answer.append("4");
+            char now = num.charAt(i);
+            if (now == '2') {
+                beforex += (twos/2);
+            } else if (now == '4') {
+                beforey += (twos/2);
+            } else if (now == '3') {
+                beforex += (twos/2);
+                beforey += (twos/2);
             }
+            twos /= 2;
         }
 
-        System.out.println(answer.toString());
+        twos = Math.pow(2,d);
+        double newx = beforex - movex;
+        double newy = beforey - movey;
+        String answer = "";
+
+        if (newx > twos || newy > twos || newx < 1 || newy < 1){
+            System.out.println("-1");
+            return;
+        }
+
+        for (int i = 0; i < d; i++){
+            if (newx > (twos/2) && newy > (twos/2)){
+                answer += "3";
+                newx -= (twos/2);
+                newy -= (twos/2);
+            } else if (newx > (twos/2)){
+                answer += "2";
+                newx -= (twos/2);
+            } else if (newy > (twos/2)){
+                answer += "4";
+                newy -= (twos/2);
+            } else {
+                answer += "1";
+            }
+            twos /= 2;
+        }
+
+        System.out.println(answer);
+
     }
 }
